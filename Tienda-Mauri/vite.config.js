@@ -1,12 +1,12 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
-import tailwindcss from '@tailwindcss/vite'; // <-- NUEVO
+import tailwindcss from '@tailwindcss/vite';
 import { VitePWA } from 'vite-plugin-pwa';
 
 export default defineConfig({
   plugins: [
     react(),
-    tailwindcss(), // <-- NUEVO: Activa Tailwind
+    tailwindcss(),
     VitePWA({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'masked-icon.svg'],
@@ -14,8 +14,8 @@ export default defineConfig({
         name: 'FreshMix E-Commerce',
         short_name: 'FreshMix',
         description: 'Jugos naturales prensados en frío',
-        theme_color: '#006e2b',
-        background_color: '#fafaf4',
+        theme_color: '#0f4c5c',
+        background_color: '#f7f9fa',
         icons: [
           { src: 'pwa-192x192.png', sizes: '192x192', type: 'image/png' },
           { src: 'pwa-512x512.png', sizes: '512x512', type: 'image/png' },
